@@ -1,0 +1,45 @@
+@use "variables" as *;
+
+button {
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: transparent;
+
+  &.rounded {
+    border-radius: 5em;
+  }
+
+  &.retroClean {
+    color: $primary-color;
+    box-shadow: 5px 5px 0px 2px $primary-color;
+    border: 2px solid $primary-color;
+  }
+
+  &.retroClean:hover {
+    background-color: $highlight-color;
+  }
+
+  &.retroGlow {
+    border: 1px solid $primary-color;
+
+    &:hover {
+      box-shadow: 0 0 1rem $highlight-color, 0 0 3rem $highlight-color;
+      background-color: $highlight-color;
+      color: $primary-color;
+    }
+  }
+
+  &.sm {
+    padding: 0.2rem 1rem;
+    font-size: 14px;
+  }
+  &.md {
+    padding: 1rem 2rem;
+    font-size: 16px;
+  }
+  &.lg {
+    padding: 1rem 4rem;
+    font-size: 20px;
+  }
+}

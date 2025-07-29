@@ -1,39 +1,37 @@
 button {
-  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-
-.custom-button--primary {
-  background-color: #92b38c;
-  color: black;
-  border-radius: 5em;
-  box-shadow: 5px 5px 0px 2px black;
-}
-
-.custom-button--primary:hover {
-  background-color: #7fff68;
-}
-
-.custom-button--secondary {
+  transition: all 0.3s ease;
   background-color: transparent;
-  background-color: #b5ffa8;
-  border: none;
+}
+button.rounded {
   border-radius: 5em;
-  box-shadow: 5px 5px 0px 2px black;
-
-  .has-border {
-    border: 1px solid #000000;
-  }
 }
-
-.custom-button--secondary:hover {
-  background-color: rgb(110, 173, 240);
+button.retroClean {
+  color: #375726;
+  box-shadow: 5px 5px 0px 2px #375726;
+  border: 2px solid #375726;
 }
-
-.custom-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
+button.retroClean:hover {
+  background-color: #afff87;
 }
+button.retroGlow {
+  border: 1px solid #375726;
+}
+button.retroGlow:hover {
+  box-shadow: 0 0 1rem #afff87, 0 0 3rem #afff87;
+  background-color: #afff87;
+  color: #375726;
+}
+button.sm {
+  padding: 0.2rem 1rem;
+  font-size: 14px;
+}
+button.md {
+  padding: 1rem 2rem;
+  font-size: 16px;
+}
+button.lg {
+  padding: 1rem 4rem;
+  font-size: 20px;
+}/*# sourceMappingURL=button.css.map */

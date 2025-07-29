@@ -1,4 +1,4 @@
-import { Button } from "./components/Button";
+import { ThemedButton } from "./components/ThemedButton";
 
-export { Button };
-// export { Button, Input };
+export { ThemedButton };
+// export { ThemedButton, Input };
