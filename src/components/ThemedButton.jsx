@@ -19,7 +19,7 @@ export const ThemedButton = ({
       style={backgroundColor && { backgroundColor: backgroundColor }}
       {...props}
     >
-      {label}
+      {props.children || label}
     </button>
   );
 };
