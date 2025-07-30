@@ -18,7 +18,9 @@
       "import": "./dist/themed-ui.es.js",
       "default": "./dist/themed-ui.es.js"
     },
-    "./dist/themed-ui.css": "./dist/haudacia-themed-ui.css"
+    "./haudacia-themed-ui.css": {
+      "default": "./dist/haudacia-themed-ui.css"
+    }
   },
   "scripts": {
     "dev": "vite",
