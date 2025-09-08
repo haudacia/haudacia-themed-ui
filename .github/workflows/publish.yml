@@ -2,13 +2,14 @@ name: Publish Package
 
 on:
   release:
-    types: [published] # roda quando um release é publicado
+    types: [published]
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     permissions:
-      contents: read # ler repositório
+      contents: read
+      id-token: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
